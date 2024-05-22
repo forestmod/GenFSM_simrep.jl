@@ -2,3 +2,10 @@ name = "MrFOR_simrep"
 uuid = "e5fbde05-ec85-4709-bff1-7478e167bca3"
 authors = ["Antonello Lobianco <antonello@lobianco.org>"]
 version = "0.1.0"
+
+[deps]
+YAML = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+
+
+[compat]
+YAML = "0.4"

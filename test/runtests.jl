@@ -1,5 +1,4 @@
 using Test, MrFOR_simrep
 
-out = plusTwo(3)
-
-@test out == 5
+def_settings = load_settings()
+@test def_settings["simulation_region"]["cres_epsg_id"] == 3035
