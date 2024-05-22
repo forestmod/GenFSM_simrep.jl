@@ -16,5 +16,9 @@ simulation_region:
   xres: 8000 # meters
   yres: 8000 # meters
 resource_init_regions: ["fr"] 
-
+years:
+  start: 2021
+  step:  1
+  end:   2024 
+ft_list:  ${SCENARIO_PATH}/forest_types.txt
 
