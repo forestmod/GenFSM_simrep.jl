@@ -45,6 +45,10 @@ jobs:
       - uses: codecov/codecov-action@v3
         with:
           file: lcov.info
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
   docs:
     name: Documentation
     runs-on: ubuntu-latest
