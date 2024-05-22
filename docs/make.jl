@@ -5,7 +5,8 @@ push!(LOAD_PATH,"../src/")
 makedocs(sitename="MrFOR_simrep.jl Documentation",
          pages = [
             "Index" => "index.md",
-            "An other page" => "anotherPage.md",
+            "Included projects" => "projects.md",
+            "Module API" => "module_api.md",
          ],
          format = Documenter.HTML(prettyurls = false)
 )

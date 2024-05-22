@@ -2,7 +2,7 @@
 
 
 ```@docs
-MrFOR
+MrFOR_simrep
 ```
 
 ## Module Index
