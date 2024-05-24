@@ -1,7 +1,7 @@
 """
-    MrFOR_simrep
+    GenFSM_simrep
 
-Simulation settings repository for MrFOR models.
+Simulation settings repository for GenFSM models.
 
 This package sole function is [`load_settings`](@ref).
 
@@ -13,7 +13,7 @@ The settings are stored in this repository as yaml files in:
 
 Where the default project and the default scenarios ae both named "default".
 """
-module MrFOR_simrep
+module GenFSM_simrep
 
 using YAML
 export load_settings
@@ -51,4 +51,4 @@ function load_settings(project="default",scenario="default")
     return settings
 end
 
-end # module MrFOR_simrep
+end # module GenFSM_simrep

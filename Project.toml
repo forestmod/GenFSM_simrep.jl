@@ -1,4 +1,4 @@
-name = "MrFOR_simrep"
+name = "GenFSM_simrep"
 uuid = "e5fbde05-ec85-4709-bff1-7478e167bca3"
 authors = ["Antonello Lobianco <antonello@lobianco.org>"]
 version = "0.1.0"

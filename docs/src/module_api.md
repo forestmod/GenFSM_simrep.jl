@@ -1,20 +1,20 @@
-# The MrFOR_simrep Module
+# The GenFSM_simrep Module
 
 
 ```@docs
-MrFOR_simrep
+GenFSM_simrep
 ```
 
 ## Module Index
 
 ```@index
-Modules = [MrFOR_simrep]
+Modules = [GenFSM_simrep]
 Order   = [:constant, :type, :function, :macro]
 ```
 ## Detailed API
 
 ```@autodocs
-Modules = [MrFOR_simrep]
+Modules = [GenFSM_simrep]
 Order   = [:constant, :type, :function, :macro]
 ```
 

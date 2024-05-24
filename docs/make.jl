@@ -1,8 +1,8 @@
 using Documenter
-using MrFOR_simrep
+using GenFSM_simrep
 
 push!(LOAD_PATH,"../src/")
-makedocs(sitename="MrFOR_simrep.jl Documentation",
+makedocs(sitename="GenFSM_simrep.jl Documentation",
          pages = [
             "Index" => "index.md",
             "Included projects" => "projects.md",
@@ -14,6 +14,6 @@ makedocs(sitename="MrFOR_simrep.jl Documentation",
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
 # for more information.
 deploydocs(
-    repo = "github.com/ecoformod/MrFOR_simrep.jl.git",
+    repo = "github.com/forestmod/GenFSM_simrep.jl.git",
     devbranch = "main"
 )
