@@ -15,7 +15,7 @@ Where the default project and the default scenarios ae both named "default".
 """
 module GenFSM_simrep
 
-using YAML
+using YAML, DelimitedFiles
 export load_settings
 
 
@@ -48,6 +48,12 @@ function load_settings(project="default",scenario="default")
     ENV["SCENARIO_PATH"] = scenario_path
     settings      = YAML.load_file(settings_path)
     recursive_replace!(settings,"\${SCENARIO_PATH}" => scenario_path)
+    ft_list = convert(Vector{String},readdlm(settings["ft_list"],';')[:,1])
+    settings["ft"] = ft_list
+    settings["simulation_region"]["nx"] = Int(ceil((settings["simulation_region"]["x_ub"] - settings["simulation_region"]["x_lb"]) / settings["simulation_region"]["xres"])) 
+    settings["simulation_region"]["ny"] = Int(ceil((settings["simulation_region"]["y_ub"] - settings["simulation_region"]["y_lb"]) / settings["simulation_region"]["yres"]))
+    settings["nft"] = size(ft_list,1)
+    settings["ndc"] = length(settings["dc"])
     return settings
 end
 

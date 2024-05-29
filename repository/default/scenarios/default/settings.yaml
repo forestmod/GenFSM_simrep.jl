@@ -21,4 +21,6 @@ years:
   step:  1
   end:   2024 
 ft_list:  ${SCENARIO_PATH}/forest_types.txt
+rel_temp_output: "temp_output"
+rel_output: "out"
 
