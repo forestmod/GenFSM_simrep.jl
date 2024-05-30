@@ -1,13 +1,13 @@
-# Diameter classes
-dc: {1: 7.5, 2: 15, 3: 25, 4: 35, 5: 45, 6: 55, 7: 65, 8: 75, 9: 85, 10: 95, 11: 150, 12: 9999}
+# General settings
 
-simulation_region:
+# Definition of the region under simulation
 # This values cover France only
 # Check conversion on https://epsg.io/transform
 # Apply conversion using the `Proj` package:
 # using Proj
 # trans = Proj.Transformation("EPSG:4326", "EPSG:3035", always_xy=true)
 # (X,Y) = trans(2.35,48.85) # Paris
+simulation_region:
   cres_epsg_id: 3035
   x_lb: 2.980269469245921e6 # -6 in EPSG:4326 (i.e. WGS 84 ellipsoid unprojected)
   x_ub: 4.252324473944207e6 # 9
@@ -15,12 +15,18 @@ simulation_region:
   y_ub: 3.210471068338138e6 # 52
   xres: 8000 # meters
   yres: 8000 # meters
-resource_init_regions: ["fr"] 
 years:
   start: 2021
   step:  1
   end:   2024 
-ft_list:  ${SCENARIO_PATH}/forest_types.txt
-rel_temp_output: "temp_output"
-rel_output: "out"
+
+# Output paths:
+# - temp: get erased after model ends
+# - cache: save temporary stuff, like downloaded data and MD trained models. This can be reused between simulations
+# - out: save model results
+temp_path: "temp"
+cache_path: "cache"
+output_path: "out"
+
+
 

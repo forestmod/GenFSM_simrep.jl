@@ -1,0 +1,4 @@
+# A vector with the information of what data to force download
+force_download: []
+# A vector with the information of which parts of ML workflow to force retrain
+force_ml_train: []
