@@ -18,7 +18,7 @@ module GenFSM_simrep
 using YAML, DelimitedFiles
 export load_settings
 
-include("Utilities.jl")
+include("Utils.jl")
 
 """
     load_settings(project="default",scenario="default")
